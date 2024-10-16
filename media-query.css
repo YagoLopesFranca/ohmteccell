@@ -1,5 +1,19 @@
 @charset 'UTF-8';
 
+#video-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#video-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .container-mensagemvideo {
   align-content: center;
   align-items: flex-start;
