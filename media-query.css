@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+.container-mensagemvideo {
+  align-content: center;
+  align-items: flex-start;
+  padding: 5rem;
+}
+
+.container-mensagemvideo > h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 7rem;
+  text-align: justify;
+}
+
+span {
+  display: inline;
+}
+
+.container-mensagemvideo > p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
