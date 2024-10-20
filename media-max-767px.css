@@ -106,7 +106,7 @@ section {
 #video-section video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -168,7 +168,7 @@ span {
 }
 .whatzapp-button > p {
   width: 50%;
-  transform: translateY(-4px);
+  transform: translateY(-3px);
 }
 
 .container-mensagemvideo > a {
