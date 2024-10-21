@@ -1,27 +1,26 @@
 @charset 'UTF-8';
 
-section {
+/* section {
   position: relative;
-}
+} */
 
-#video-section {
+/* #video-section {
   height: 100vh;
   width: 100vw;
-}
+} */
 
-#video-section video {
+/* #video-section video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .container-mensagemvideo {
-  align-content: center;
+  align-content: flex-start;
   align-items: flex-start;
-  padding: 5rem;
 }
 
 .container-mensagemvideo > h1 {
@@ -29,6 +28,7 @@ section {
   font-weight: 600;
   line-height: 7rem;
   text-align: justify;
+  transform: translate(4rem);
 }
 
 span {
@@ -38,4 +38,9 @@ span {
 .container-mensagemvideo > p {
   font-size: 1.2rem;
   text-align: justify;
+  transform: translate(4rem);
+}
+
+.whatzapp-button {
+  transform: translate(4rem);
 }
