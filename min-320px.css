@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+#burguer {
+  position: absolute;
+  top: -0.2rem;
+  right: 5rem;
+  cursor: pointer;
+}
+
 .container-mensagemvideo {
   width: 100vw;
   transform: translate(-10px, -70px);

@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+#burguer {
+  position: absolute;
+  top: -0.2rem;
+  right: 7rem;
+  cursor: pointer;
+}
+
 .container-mensagemvideo {
   width: 80vw;
   height: 50vh;
@@ -18,9 +25,6 @@
   font-size: 0.9rem;
   text-align: justify;
   /* transform: translate(4rem); */
-}
-
-.whatzapp-button {
 }
 
 .whatzapp-button > p {

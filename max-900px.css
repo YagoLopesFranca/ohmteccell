@@ -1,5 +1,12 @@
 @charset 'UTF-8';
 
+#burguer {
+  position: absolute;
+  top: -0.2rem;
+  right: 9rem;
+  cursor: pointer;
+}
+
 /* section {
   position: relative;
 } */
@@ -19,24 +26,25 @@
 } */
 
 .container-mensagemvideo {
+  width: 80vw;
+  height: 70vh;
   align-content: flex-start;
   align-items: flex-start;
+  transform: translate(-4.1rem, -6rem);
 }
 
 .container-mensagemvideo > h1 {
-  font-size: 4.35rem;
+  font-size: 5rem;
   font-weight: 600;
-  line-height: 7rem;
+  line-height: 5rem;
   text-align: justify;
-  transform: translate(4rem);
 }
 
 .container-mensagemvideo > p {
   font-size: 1.2rem;
   text-align: justify;
-  transform: translate(4rem);
 }
 
-.whatzapp-button {
-  transform: translate(4rem);
+.whatzapp-button > p {
+  font-size: 1.18rem;
 }
