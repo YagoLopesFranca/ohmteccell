@@ -25,9 +25,10 @@ section {
 }
 
 .container-mensagemvideo > h1 {
-  font-size: 5rem;
+  font-size: 4.35rem;
   font-weight: 600;
   line-height: 7rem;
+  text-align: justify;
 }
 
 span {
