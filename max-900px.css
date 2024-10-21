@@ -8,11 +8,11 @@
 }
 
 .container-mensagemvideo {
-  width: 80vw;
+  width: 60vw;
   height: 70vh;
   align-content: flex-start;
   align-items: flex-start;
-  transform: translate(-4.1rem, -6rem);
+  transform: translate(-15rem, -5rem);
 }
 
 .container-mensagemvideo > h1 {
