@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+.container-mensagemvideo {
+  width: 80vw;
+  height: 50vh;
+  justify-content: flex-end;
+  align-items: flex-start;
+  transform: translate(-3rem, 4rem);
+}
+
+.container-mensagemvideo > h1 {
+  font-size: 3.35rem;
+  line-height: 4rem;
+  text-align: justify;
+}
+
+.container-mensagemvideo > p {
+  font-size: 0.9rem;
+  text-align: justify;
+  /* transform: translate(4rem); */
+}
+
+.whatzapp-button {
+}
+
+.whatzapp-button > p {
+  font-size: 1.18rem;
+}

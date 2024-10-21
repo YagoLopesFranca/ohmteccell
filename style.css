@@ -123,7 +123,7 @@ section {
   flex-flow: column wrap;
   justify-content: flex-end;
   align-items: center;
-  transform: translateY(-40px);
+  transform: translateY(-60px);
 }
 
 .container-mensagemvideo > h1 {
@@ -144,14 +144,14 @@ section {
   letter-spacing: 0.1rem;
   text-align: center; /* Centraliza o texto */
 
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .whatzapp-button {
   width: 100%;
   max-width: 15rem;
   padding: 1.5rem;
-  margin-bottom: 5.3rem;
+  margin-bottom: 5rem;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
