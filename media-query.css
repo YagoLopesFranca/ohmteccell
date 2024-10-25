@@ -31,8 +31,8 @@
   }
 
   .container-mensagemvideo {
-    width: 90vw;
-    height: 30vh;
+    width: 80vw;
+    height: 40vh;
     justify-content: flex-end;
     align-items: flex-start;
   }
@@ -54,4 +54,23 @@
 
 @media screen and (min-width: 1024px) {
   /* Regras para telas a partir de 1024px */
+  #video-section video {
+    object-position: 80% 40%;
+  }
+
+  .container-mensagemvideo {
+    width: 90vw;
+    height: 40vh;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .container-mensagemvideo h1 {
+    padding-bottom: 1rem;
+  }
+
+  .whatzapp-button > p {
+    font-size: 1.18rem;
+  }
 }
