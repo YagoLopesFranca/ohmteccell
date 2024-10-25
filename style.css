@@ -111,22 +111,22 @@ section {
   top: 0;
   left: 0;
   z-index: -1;
+  object-position: 70% 10%;
 }
 
 .container-mensagemvideo {
-  width: 100vw;
-  height: 90vh;
+  width: 90vw;
+  height: 50vh;
 
   color: #fafafa; /* Cor branca para o texto */
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
   align-items: center;
-  transform: translateY(-60px);
 }
 
 .container-mensagemvideo > h1 {
-  font-size: 2.3rem;
+  font-size: 3rem;
   text-align: center; /* Centraliza o texto */
   line-height: 2.75rem;
   margin-bottom: 1.5rem;
@@ -138,12 +138,12 @@ section {
 
 .container-mensagemvideo > p {
   color: #fafafa;
-  font-size: 7px;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
   text-align: center; /* Centraliza o texto */
 
-  padding-bottom: 2rem;
+  padding-bottom: 2.75rem;
 }
 
 .whatzapp-button {
