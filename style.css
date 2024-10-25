@@ -129,7 +129,7 @@ section {
   font-size: 3rem;
   text-align: center; /* Centraliza o texto */
   line-height: 2.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* span {
@@ -143,14 +143,13 @@ section {
   letter-spacing: 0.1rem;
   text-align: center; /* Centraliza o texto */
 
-  padding-bottom: 2.75rem;
+  padding-bottom: 2rem;
 }
 
 .whatzapp-button {
   width: 100%;
   max-width: 15rem;
   padding: 1.5rem;
-  margin-bottom: 5rem;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
