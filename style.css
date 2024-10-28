@@ -29,7 +29,6 @@ header {
     #eab308,
     #ca8a04
   );
-  display: flex;
 }
 
 #burguer {
@@ -95,7 +94,7 @@ section {
 
 #video-section {
   height: 97vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +104,9 @@ section {
 
 #video-section video {
   width: 100%;
+  max-width: 100%; /* Impede que o vídeo ultrapasse o container */
   height: 100%;
+  max-height: 100vh; /* Mantém o vídeo dentro da altura da tela */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -115,8 +116,9 @@ section {
 }
 
 .container-mensagemvideo {
-  width: 90vw;
-  height: 50vh;
+  width: 90%;
+  max-width: 90%;
+  height: 50%;
 
   color: #fafafa; /* Cor branca para o texto */
   display: flex;
@@ -125,7 +127,7 @@ section {
   align-items: center;
 }
 
-.container-mensagemvideo > h1 {
+.con .container-mensagemvideo > h1 {
   font-size: 3rem;
   text-align: center; /* Centraliza o texto */
   line-height: 2.75rem;
@@ -187,4 +189,115 @@ section {
 main > img {
   width: 5rem;
   display: none;
+}
+
+@media screen and (min-width: 480px) {
+  /* Regras para telas a partir de 480px */
+  #video-section video {
+    object-position: 77% 80%;
+  }
+
+  .container-mensagemvideo {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .container-mensagemvideo > h1 {
+    font-size: 3rem;
+  }
+
+  .container-mensagemvideo > p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .whatzapp-button > p {
+    font-size: 1.18rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Regras para telas a partir de 768px */
+
+  #video-section video {
+    object-position: 80% 100%;
+  }
+
+  .container-mensagemvideo {
+    width: 80%;
+    height: 40%;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .container-mensagemvideo h1 {
+    font-size: 3.75rem;
+    text-align: justify;
+    line-height: 3.75rem;
+  }
+  .container-mensagemvideo p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .whatzapp-button > p {
+    font-size: 1.18rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Regras para telas a partir de 1024px */
+  header {
+    height: 2.25rem;
+  }
+
+  header > nav {
+    display: block;
+    transform: translateY(-0.3rem);
+  }
+
+  header > nav > ul {
+    width: auto;
+    background: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header > nav > ul > li > a {
+    color: black;
+    font-weight: 500;
+    font-size: 1.55rem;
+    padding: 0rem 3rem;
+  }
+
+  header > nav > ul > li > a:hover {
+    background-color: #ca8b043d;
+    transition: 0.3s;
+    padding: ;
+  }
+
+  #burguer {
+    display: none;
+  }
+
+  #video-section video {
+    object-position: 80% 40%;
+  }
+
+  .container-mensagemvideo {
+    width: 90%;
+    height: 40%;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .container-mensagemvideo h1 {
+    padding-bottom: 1rem;
+  }
+
+  .whatzapp-button > p {
+    font-size: 1.18rem;
+  }
 }
