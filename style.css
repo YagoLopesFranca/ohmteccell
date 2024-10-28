@@ -106,7 +106,7 @@ section {
   width: 100%;
   max-width: 100%; /* Impede que o vídeo ultrapasse o container */
   height: 100%;
-  max-height: 100vh; /* Mantém o vídeo dentro da altura da tela */
+  max-height: 100%; /* Mantém o vídeo dentro da altura da tela */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -203,7 +203,11 @@ main > img {
   }
 
   .container-mensagemvideo > h1 {
-    font-size: 3rem;
+    font-size: 3.55rem;
+    flex-flow: column;
+    text-align: center;
+    line-height: 3.45rem;
+    margin-bottom: 1.45rem;
   }
 
   .container-mensagemvideo > p {
@@ -224,7 +228,7 @@ main > img {
   }
 
   .container-mensagemvideo {
-    width: 80%;
+    width: 90%;
     height: 40%;
     justify-content: flex-end;
     align-items: flex-start;
@@ -234,7 +238,9 @@ main > img {
     font-size: 3.75rem;
     text-align: justify;
     line-height: 3.75rem;
+    margin-bottom: 1.45rem;
   }
+
   .container-mensagemvideo p {
     font-size: 1rem;
     text-align: justify;
@@ -294,7 +300,7 @@ main > img {
   }
 
   .container-mensagemvideo h1 {
-    padding-bottom: 1rem;
+    margin-bottom: 1.45rem;
   }
 
   .whatzapp-button > p {
