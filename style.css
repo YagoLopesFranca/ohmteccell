@@ -82,21 +82,21 @@ header > nav > ul > li > a:hover {
 }
 
 section {
-  height: 96vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* align-content: center; */
+  align-items: center;
+  align-content: center;
   border-bottom: 1rem solid #ccc;
   overflow: hidden;
 }
 
 .video-section {
-  /* height: 97vh;
+  height: 97vh;
   width: 100%;
   display: flex;
-  position: relative;*/
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -213,8 +213,8 @@ main > img {
   }
 
   .container-mensagemvideo {
-    /* width: 90%;
-    height: 40%; */
+    width: 90%;
+    height: 40%;
     justify-content: center;
     align-items: center;
   }
@@ -244,7 +244,7 @@ main > img {
 
   .container-mensagemvideo {
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .container-mensagemvideo > h1 {
@@ -253,6 +253,7 @@ main > img {
     text-align: center;
     line-height: 3.45rem;
     margin-bottom: 1.45rem;
+    text-align: justify;
   }
 
   .container-mensagemvideo > p {
@@ -306,15 +307,16 @@ main > img {
   }
 
   .container-mensagemvideo {
-    /* width: 90%;
-    height: 40%; */
-    /* flex-flow: column nowrap; */
-    /* justify-content: flex-end;
-    align-items: flex-start; */
+    width: 90%;
+    height: 40%;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .container-mensagemvideo h1 {
     margin-bottom: 1.45rem;
+    text-align: justify;
   }
 
   .whatzapp-button > p {
