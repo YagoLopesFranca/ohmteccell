@@ -127,7 +127,7 @@ section {
   align-items: center;
 }
 
-.con .container-mensagemvideo > h1 {
+.container-mensagemvideo > h1 {
   font-size: 3rem;
   text-align: center; /* Centraliza o texto */
   line-height: 2.75rem;
@@ -145,7 +145,7 @@ section {
   letter-spacing: 0.1rem;
   text-align: center; /* Centraliza o texto */
 
-  padding-bottom: 2rem;
+  margin-bottom: 1.45rem;
 }
 
 .whatzapp-button {
