@@ -121,7 +121,7 @@ section {
 
   color: #fafafa; /* Cor branca para o texto */
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
 }
@@ -151,11 +151,10 @@ section {
   width: 100%;
   max-width: 15rem;
   padding: 1.5rem;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
-  /* flex-flow: row wrap; */
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
   justify-content: space-between;
   background-color: #ca8a04;
   border-radius: 1rem;
