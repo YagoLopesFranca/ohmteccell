@@ -191,6 +191,21 @@ main > img {
   display: none;
 }
 
+@media screen and (max-width: 394px) {
+  .container-mensagemvideo > h1 {
+    font-size: 2.75rem;
+    flex-flow: column;
+    text-align: center;
+    line-height: 2.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .container-mensagemvideo > p {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
 @media screen and (min-width: 480px) {
   /* Regras para telas a partir de 480px */
   #video-section video {
