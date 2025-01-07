@@ -94,7 +94,7 @@
             <br />
             <!-- Modelo do Aparelho -->
             <label for="imodelo">Digite o Modelo:</label>
-            <input list="modelo" id="imodelo" name="modelo" />
+            <input list="Aparelhos" id="imodelo" name="modelo" />
             <datalist id="Aparelhos">
               <option value="iphone">Iphone</option>
               <option value="samsung">Samsung</option>
@@ -141,17 +141,11 @@
       function mudouTamanho() {
         if (window.innerWidth >= 1024) {
           itens.style.display = "block";
-        } else if {
-          (window.innerWidth >= 768) {
-            itens.style.display = "block";
-          }
-        } else if {
-          (window.innerWidth >= 480) {
-            itens.style.display = "block";
-          }
-        } else {
-          itens.style.display = "none";
-        }
+        } else if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else if (window.innerWidth >= 480) {
+          itens.style.display = "block";
+        } else itens.style.display = "none";
       }
 
       function clickMenu() {
