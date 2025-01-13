@@ -56,7 +56,7 @@ header > nav {
 header > nav > ul {
   height: 100vh;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow:  column wrap;
   justify-content: flex-start;
   background-image: linear-gradient(to bottom, #a1a1aa, #71717a, #52525b);,
   z-index: 11;
@@ -64,6 +64,7 @@ header > nav > ul {
 
 header > nav > ul > li {
   list-style-type: none;
+  padding: 2.75rem;
 }
 
 header > nav > ul > li > a {
@@ -226,7 +227,7 @@ main > img {
 
   header > nav {
     /* display: inline-block; */
-    transform: translateY(-0.3rem);
+    transform: translateY(-2.3rem);
   }
 
   header > nav > ul {
@@ -244,6 +245,7 @@ main > img {
   header > nav > ul > li > a:hover {
     background-color: #52525b;
     color: #ca8a04;
+    font-weight: bolder;
     transition: 0.3s;
   }
 
@@ -290,7 +292,8 @@ main > img {
 
   header > nav {
     display: block;
-    transform: translate(-0.94rem, -0rem);
+    /* transform: translate(-0.94rem, -0rem); */
+    transform: translate(-1.02rem, -1.6rem);
   }
 
   header > nav > ul {
@@ -299,18 +302,24 @@ main > img {
     justify-content: center;
   }
 
+  header > nav > ul > li {
+    list-style-type: none;
+    padding: 1.75rem;
+}
+
   header > nav > ul > li > a {
     color: black;
     font-weight: 500;
-    font-size: 1.25rem;
-    padding: 0.4rem 1.2rem;
+    font-size: 1.26rem;
+    padding: 0.2rem 0.6rem; 
+
   }
 
   header > nav > ul > li > a:hover {
     background-color: #52525b;
     color: #ca8a04;
     transition: 0.3s;
-
+    font-weight: 500;
     border-radius: 0.9rem;
   }
 
@@ -358,7 +367,7 @@ main > img {
 
   header > nav {
     display: block;
-    transform: translateY(-0.2rem);
+    transform: translateY(-2rem);
   }
 
   header > nav > ul {
@@ -371,14 +380,15 @@ main > img {
 
   header > nav > ul > li > a {
     color: black;
-    font-weight: 500;
+    font-weight: 200;
     font-size: 1.55rem;
-    padding: 0rem 3rem;
+    /* padding: 0rem 3rem; */
   }
 
   header > nav > ul > li > a:hover {
     background-color: #52525b;
     color: #ca8a04;
+    font-weight: bold;
     transition: 0.3s;
   }
 
@@ -414,4 +424,33 @@ main > img {
   .whatzapp-button > p {
     font-size: 1.18rem;
   }
+}
+
+#container-fomulario {
+  background-image: linear-gradient(to bottom, #a1a1aaad, #71717a9c, #52525b86);,
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  background-color: #FEFEFE;
+  height: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#nome {
+  width: 50%;
+}
+
+legend {
+  width: 80vw;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+#label-formulario {
+  font-size: 2em;
 }
