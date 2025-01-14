@@ -435,23 +435,48 @@ main > img {
   align-items: center;
 }
 
+input::placeholder {
+  text-align: left;
+  padding: 5px;
+}
+
 fieldset {
   background-color: #FEFEFE;
   height: 80vh;
-}
-
-#nome {
-  /* width: 50%; */
+  border-radius: 20px;
 }
 
 legend {
   width: 50vw;
-  font-size: 1.5em;
+  color: #ca8a04;
+  font-size: 3em;
   font-weight: 600;
   text-align: center;
-  margin: 2em;
+  margin-bottom: 1.7em;
 }
 
 #label-formulario {
+  font-size: 1.7em;
+}
+
+#label-defeito {
   font-size: 2em;
+}
+
+.textarea-h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+textarea::placeholder {
+  padding-left: 1em;
+}
+
+#div-area-defeito {
+  text-align: center;
+}
+
+label {
+  margin-left: 1em;
 }

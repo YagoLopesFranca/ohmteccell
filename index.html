@@ -83,17 +83,22 @@
               placeholder="Nome completo"
             />
             <br />
+
             <!-- Telefone -->
+
             <label id="label-formulario" for="itelefone">Telefone:</label>
             <input
               type="tel"
               id="itelefone"
               name="telefone"
               placeholder="(XX) XXXXX-XXXX"
+              size="30"
               pattern="\(\d{2}\) \d{5}-\d{4}"
               required
             />
+
             <br />
+
             <!-- Modelo do Aparelho -->
             <label id="label-formulario" for="imodelo">Digite o Modelo </label>
             <input list="Aparelhos" id="imodelo" name="modelo" />
@@ -104,9 +109,23 @@
               <option value="motorola">Motorola</option>
               <option value="poco">Poco</option>
             </datalist>
+
             <br />
+
             <!-- Defeito do Aparelho -->
-            <label id="label-formulario" for="idefeito">Defeito</label>
+            <div id="div-area-defeito">
+              <h2 class="textarea-h2">Defeito do Aparelhos</h2>
+              <label id="label-defeito" for="defeito"></label>
+              <br />
+              <textarea
+                name="defeitos"
+                id="defeitos"
+                cols="80"
+                rows="5"
+                placeholder="Digite o defeito do seu Smartphone."
+              ></textarea>
+            </div>
+            <!-- <label id="label-formulario" for="idefeito">Defeito</label>
             <input
               type="text"
               name="defeito"
@@ -115,7 +134,7 @@
               placeholder="Informe o Defeito"
               size="50"
               max="200"
-            />
+            /> -->
             <br />
             <input type="submit" value="Enviar" />
           </fieldset>
