@@ -19,11 +19,13 @@
       <!-- <h1>Assistência Técnica Especializada em Tablete e Celular</h1> -->
       <nav id="itens">
         <ul>
-          <li id="margin-linkmenu"><a href="#">Orçamento</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Acessórios</a></li>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Garantia</a></li>
+          <li id="margin-linkmenu">
+            <a href="#container-fomulario">Orçamento</a>
+          </li>
+          <li><a href="#container-produtos">Produtos</a></li>
+          <li><a href="#container-produtos">Acessórios</a></li>
+          <li><a href="#container-sobrenos">Sobre Nós</a></li>
+          <li><a href="#container-garantia">Garantia</a></li>
         </ul>
       </nav>
       <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -80,6 +82,7 @@
               autocomplete="on"
               placeholder="Nome completo"
             />
+            <br />
             <!-- Telefone -->
             <label id="label-formulario" for="itelefone">Telefone:</label>
             <input
@@ -90,6 +93,7 @@
               pattern="\(\d{2}\) \d{5}-\d{4}"
               required
             />
+            <br />
             <!-- Modelo do Aparelho -->
             <label id="label-formulario" for="imodelo">Digite o Modelo </label>
             <input list="Aparelhos" id="imodelo" name="modelo" />
@@ -100,6 +104,7 @@
               <option value="motorola">Motorola</option>
               <option value="poco">Poco</option>
             </datalist>
+            <br />
             <!-- Defeito do Aparelho -->
             <label id="label-formulario" for="idefeito">Defeito</label>
             <input
@@ -111,25 +116,30 @@
               size="50"
               max="200"
             />
+            <br />
             <input type="submit" value="Enviar" />
           </fieldset>
         </form>
       </section>
+
       <!-- Produtos  e Acessórios-->
-      <section>
+      <section id="container-produtos">
         <h2>Produtos e Acessórios</h2>
       </section>
+
       <!-- Sobre Nós -->
-      <section>
+      <section id="container-sobrenos">
         <h2>Sobre Nós</h2>
       </section>
+
       <!-- Garantia -->
-      <section>
+      <section id="container-garantia">
         <h2>Garantia</h2>
       </section>
     </main>
+
     <!-- Rodapé -->
-    <footer>
+    <footer id="container-rodape">
       <h2>Rodapé</h2>
     </footer>
 

@@ -426,8 +426,10 @@ main > img {
   }
 }
 
+/* FORMULARIO */
+
 #container-fomulario {
-  background-image: linear-gradient(to bottom, #a1a1aaad, #71717a9c, #52525b86);,
+  background-image: linear-gradient(to bottom, #a1a1aa7a, #71717a4d, #52525b5e);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,20 +437,19 @@ main > img {
 
 fieldset {
   background-color: #FEFEFE;
-  height: 50vh;
-  display: flex;
-  flex-flow: column nowrap;
+  height: 80vh;
 }
 
 #nome {
-  width: 50%;
+  /* width: 50%; */
 }
 
 legend {
-  width: 80vw;
-  font-size: 2em;
+  width: 50vw;
+  font-size: 1.5em;
   font-weight: 600;
   text-align: center;
+  margin: 2em;
 }
 
 #label-formulario {
