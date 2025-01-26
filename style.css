@@ -428,55 +428,112 @@ main > img {
 
 /* FORMULARIO */
 
-#container-fomulario {
-  background-image: linear-gradient(to bottom, #a1a1aa7a, #71717a4d, #52525b5e);
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+label {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+input {
+  height: 20px;
+  text-indent: 10px;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  border: 1px solid #71717a63;
+  outline: none;
+}
+
+textarea {
+  font-family: 'Inter', sans-serif;
+ text-indent: 10px;
+ border: 1px solid #71717a63;
+ border-radius: 8px;
+ outline: none;
+}
+
+button{
+  background-color: #ca8b04b4;
+  color: black;
+  font-weight: 500;
+  padding: 1px 15px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+
+button:hover {
+background-color: #fafafa;
+color: black;
+cursor: pointer;
+box-shadow: 0rem 0.5rem 0.4rem 0.3rem #ca8b0446;
+transition: 0.1s;
+} 
+
+.span-label {
+  color: red;
+}
+
+#section-formulario {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-input::placeholder {
-  text-align: left;
-  padding: 5px;
+#section-divformulario {
+  width: 55vw;
+  height: 90vh;
+  border: 1px solid #ca8b04b4;
+  border-radius: 10px;
+  box-shadow: 0px 8px 7px 7px rgba(0, 0, 0, 0.123);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-fieldset {
-  background-color: #FEFEFE;
-  height: 80vh;
-  border-radius: 20px;
-}
-
-legend {
-  width: 50vw;
-  color: #ca8a04;
-  font-size: 3em;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 1.7em;
-}
-
-#label-formulario {
-  font-size: 1.7em;
-}
-
-#label-defeito {
-  font-size: 2em;
-}
-
-.textarea-h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-top: 2em;
-}
-
-textarea::placeholder {
-  padding-left: 1em;
-}
-
-#div-area-defeito {
+.formulario-h1 > h1 {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  font-size: 4em;
+  /* padding: 7px 0;
+  margin-bottom: 50px; */
   text-align: center;
 }
 
-label {
-  margin-left: 1em;
+.caixa-label {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
 }
+
+.caixa-input {
+  display: flex;
+  flex-flow: column;
+  gap: 22px;
+} 
+
+.caixa-orcamento-form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+
+}
+
+.caixa-botao {
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  outline: none;
+}
+
+

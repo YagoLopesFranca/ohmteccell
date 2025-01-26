@@ -20,7 +20,7 @@
       <nav id="itens">
         <ul>
           <li id="margin-linkmenu">
-            <a href="#container-fomulario">Orçamento</a>
+            <a href="#section-formulario">Orçamento</a>
           </li>
           <li><a href="#container-produtos">Produtos</a></li>
           <li><a href="#container-produtos">Acessórios</a></li>
@@ -65,80 +65,109 @@
       </section>
 
       <!-- Formulario -->
-      <section id="container-fomulario">
-        <form action="" method="post">
-          <fieldset>
-            <legend>Orçamento</legend>
-            <!-- Nome -->
-            <label id="label-formulario" for="inome">Nome</label>
-            <input
-              type="text"
-              id="nome"
-              name="inome"
-              required
-              minlength="3"
-              maxlength="50"
-              size="30"
-              autocomplete="on"
-              placeholder="Nome completo"
-            />
-            <br />
-
-            <!-- Telefone -->
-
-            <label id="label-formulario" for="itelefone">Telefone:</label>
-            <input
-              type="tel"
-              id="itelefone"
-              name="telefone"
-              placeholder="(XX) XXXXX-XXXX"
-              size="30"
-              pattern="\(\d{2}\) \d{5}-\d{4}"
-              required
-            />
-
-            <br />
-
-            <!-- Modelo do Aparelho -->
-            <label id="label-formulario" for="imodelo">Digite o Modelo </label>
-            <input list="Aparelhos" id="imodelo" name="modelo" />
-            <datalist id="Aparelhos">
-              <option value="iphone">Iphone</option>
-              <option value="samsung">Samsung</option>
-              <option value="xiaomi">Xiaomi</option>
-              <option value="motorola">Motorola</option>
-              <option value="poco">Poco</option>
-            </datalist>
-
-            <br />
-
-            <!-- Defeito do Aparelho -->
-            <div id="div-area-defeito">
-              <h2 class="textarea-h2">Defeito do Aparelhos</h2>
-              <label id="label-defeito" for="defeito"></label>
-              <br />
-              <textarea
-                name="defeitos"
-                id="defeitos"
-                cols="80"
-                rows="5"
-                placeholder="Digite o defeito do seu Smartphone."
-              ></textarea>
+      <section id="section-formulario">
+        <div id="section-divformulario">
+          <div class="caixa-orcamento-form">
+            <div class="formulario-h1">
+              <h1>Orçamento</h1>
             </div>
-            <!-- <label id="label-formulario" for="idefeito">Defeito</label>
-            <input
-              type="text"
-              name="defeito"
-              id="idefeito"
-              required
-              placeholder="Informe o Defeito"
-              size="50"
-              max="200"
-            /> -->
-            <br />
-            <input type="submit" value="Enviar" />
-          </fieldset>
-        </form>
+            <div class="caixa-formulario">
+              <form
+                id="enviarform"
+                action="https://api.whatsapp.com/message/6LNYTNPLBTR6H1?autoload=1&app_absent=0"
+                method="get"
+              >
+                <div class="caixa-label">
+                  <p>
+                    <label id="container-fomulario" for="inome"
+                      >Nome:<span class="span-label">*</span></label
+                    >
+                  </p>
+                  <p>
+                    <label id="telefone" for="itelefone"
+                      >Telefone:<span class="span-label">*</span></label
+                    >
+                  </p>
+                  <p>
+                    <label id="modelo" for="imodelo">Modelo: </label>
+                  </p>
+                  <p>
+                    <label for="arquivo">Selecione um arquivo:</label>
+                  </p>
+                  <p>
+                    <label id="label-formulario" for="icomentario"
+                      >Defeito:<span class="span-label">*</span></label
+                    >
+                  </p>
+                </div>
+                <!-- Nome -->
+                <div class="caixa-input">
+                  <input
+                    type="text"
+                    id="inome"
+                    name="nome"
+                    required
+                    minlength="3"
+                    maxlength="50"
+                    size="40"
+                    autocomplete="on"
+                    placeholder="Nome completo"
+                  />
+                  <!-- Telefone -->
+                  <input
+                    type="tel"
+                    id="itelefone"
+                    name="telefone"
+                    placeholder="(XX) XXXXX-XXXX"
+                    size="40"
+                    pattern="\(\d{2}\) \d{5}-\d{4}"
+                    required
+                  />
+                  <!-- Modelo do Aparelho -->
+                  <input
+                    list="Aparelhos"
+                    id="imodelo"
+                    name="modelo"
+                    size="40"
+                    placeholder="Modelos do aparelho"
+                  />
+                  <datalist id="Aparelhos">
+                    <option value="iphone">Iphone</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="xiaomi">Xiaomi</option>
+                    <option value="motorola">Motorola</option>
+                    <option value="poco">Poco</option>
+                  </datalist>
+                  <!-- Seção Adicione Aquivo -->
+                  <input
+                    type="file"
+                    class="input-arquivo"
+                    id="arquivo"
+                    name="iarquivo"
+                  />
+                  <!-- Defeito do Aparelho -->
+                  <textarea
+                    name="comentario"
+                    id="icomentario"
+                    rows="5"
+                    placeholder="Informe o defeito"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- botäo formulario -->
+          <div class="caixa-botao">
+            <div id="botao-form">
+              <button type="submit" form="enviarform" id="botao-form">
+                Enviar
+              </button>
+            </div>
+            <div id="botao-form">
+              <button type="reset" form="enviarform">Limpar</button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Produtos  e Acessórios-->
